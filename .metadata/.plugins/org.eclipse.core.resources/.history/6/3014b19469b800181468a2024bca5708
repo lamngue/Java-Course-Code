@@ -1,9 +1,0 @@
-package com.vietjack;
-
-public class Machine {
-
-	public Machine() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
