@@ -1,0 +1,14 @@
+package com.vietjack;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//HashMap
+		//LinkedHashMap
+		//TreeMap
+		//HashTable
+		Map <Integer,String> hashMap = new HashMap<Integer,String>();
+	}
+
+}

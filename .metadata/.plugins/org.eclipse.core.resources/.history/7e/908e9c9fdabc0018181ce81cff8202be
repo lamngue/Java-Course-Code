@@ -1,0 +1,13 @@
+package com.vietjack;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<Integer,String> studentMap = new HashMap<Integer,String>();
+	}
+
+}

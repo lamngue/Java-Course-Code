@@ -1,0 +1,45 @@
+package com.vietjack;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+class StringLengthOrderComparator implements Comparator<String>{
+	@Override
+	public int compare(String arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return arg0.length()-arg1.length();
+	}
+	
+}
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> animals = new ArrayList<String>();
+		animals.add("cow");
+		animals.add("penguin");
+		animals.add("elephant");
+		animals.add("pig");
+		for(String animal:animals) {
+			System.out.println(animal);
+		}
+		System.out.println("------------");
+		Collections.sort(animals, new StringLengthOrderComparator());
+		for(String animal:animals) {
+			System.out.println(animal);
+		}
+		List<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(50);
+		numbers.add(40);
+		numbers.add(30);
+		numbers.add(70);
+		Collections.sort(numbers,new Comparator<Integer>() {
+			
+		});
+		for(Integer number:numbers) {
+			System.out.println(number);
+		}
+	}
+
+}

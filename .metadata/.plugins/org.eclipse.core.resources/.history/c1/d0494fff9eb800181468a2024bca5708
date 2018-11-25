@@ -1,0 +1,9 @@
+package com.vietjack;
+
+public class Penguin {
+
+	public Penguin() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

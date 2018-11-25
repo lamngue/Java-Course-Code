@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public Test() {
+		// TODO Auto-generated constructor stub
+	}
+	public void test1() {
+		System.out.print("dsadsadasd");
+	}
+	public void test2() {
+		test1();
+	}
+	public static void main(String []args) {
+		test2();
+	}
+}

@@ -1,0 +1,10 @@
+package com.vietjack;
+
+public class Penguin extends Bird {
+
+	public Penguin(String name) {
+		// TODO Auto-generated constructor stub
+		super(name);
+	}
+
+}

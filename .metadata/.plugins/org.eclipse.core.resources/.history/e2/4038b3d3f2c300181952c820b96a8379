@@ -1,0 +1,62 @@
+package com.vietjack.DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.vietjack.core.Student;
+
+public class StudentDAO {
+	private Connection conn;
+	public Connection getConnection() throws SQLException {
+		if(conn == null) {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "lamd3pz4i");
+			return conn;
+		}
+		return conn;
+	}
+	public void closeConnection() {
+		if(conn == null)
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
+	public boolean addNewStudent(Student student) throws SQLException {
+		String sql = "insert into STUDENT(id,name,email) values(" + student.getId() + "','" + student.getName() + "','" + student.getEmail() +"')'";
+		Statement stmt = getConnection().createStatement();
+		int n = stmt.executeUpdate(sql);
+		if(n != 0) {
+			return true;
+		}
+		return false;
+	}
+	public boolean ModifyStudent(Student student) throws SQLException {
+		String sql = "update Student set name='" + student.getName() +"',email='"+student.getEmail()+"' where id ='" + student.getId()+"'";
+		Statement stmt = getConnection().createStatement();
+		int n = stmt.executeUpdate(sql);
+		if(n != 0) {
+			return true;
+		}
+		return false;
+	}
+	public boolean deleteStudentByName(String name) throws SQLException {
+		String sql = "delete from Student where name=?";
+		PreparedStatement stmt = getConnection().prepareStatement(sql);
+		stmt.setString(1, name);
+		int n = stmt.executeUpdate(sql);
+		if(n != 0) {
+			return true;
+		}
+		return false;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

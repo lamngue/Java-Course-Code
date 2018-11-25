@@ -1,0 +1,21 @@
+package com.vietjack;
+
+import java.util.ArrayList;
+
+public class Cinema {
+	private String cinemaName;
+	private ArrayList<Seat> seats = new ArrayList<Seat>();
+	public Cinema(String cinemaName,int numRow, int seatPerRow) {
+		// TODO Auto-generated constructor stub
+		this.cinemaName = cinemaName;
+		int lastRow = 'A' + numRow -1;
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

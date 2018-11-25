@@ -1,0 +1,16 @@
+package com.vietjack;
+
+public class Main {
+
+	public Main() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String []args) {
+		Cinema cinema = new Cinema("CGV",8,12);
+		cinema.printCinemaSeats();
+		if(cinema.reserveSeat("A3")) {
+			System.out.println("Tra tien cho viec dat ghe");
+		}
+	}
+
+}

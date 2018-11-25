@@ -1,0 +1,20 @@
+package com.vietjack;
+//wait
+//notify
+//notifyAll
+class Customer{
+	int amount = 1000;
+	synchronized void withdraw(int amount) {
+		System.out.println("Chuan bi rut tien");
+		if(this.amount<1000) {
+			
+		}
+	}
+}
+public class App {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new App().
+	}
+
+}

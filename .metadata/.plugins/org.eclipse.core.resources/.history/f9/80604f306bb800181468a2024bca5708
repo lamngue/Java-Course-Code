@@ -1,0 +1,14 @@
+package com.vietjack;
+
+public class Main {
+	public Main() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String[] args) {
+		Machine machine1 = new Machine();
+		machine1.start();
+		Manager manager1 = new Manager("Lam");
+		manager1.work();
+		//Runable, Comparable
+	}
+}

@@ -1,0 +1,5 @@
+package com.vietjack;
+
+public interface Info {
+
+}

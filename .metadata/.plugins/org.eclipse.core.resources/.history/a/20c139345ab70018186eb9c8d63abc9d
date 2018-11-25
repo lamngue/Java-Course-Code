@@ -1,0 +1,11 @@
+package com.vietjack.utils;
+
+public class MathUtils {
+
+	public MathUtils() {
+		// TODO Auto-generated constructor stub
+	}
+	public static int sum(int n) {
+		return n*(n+1)/2;
+	}
+}

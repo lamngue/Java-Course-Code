@@ -1,0 +1,35 @@
+package com.vietjack;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class HelloWorld {
+
+	public HelloWorld() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String[] args) {
+		// before Java 1.5
+/*		ArrayList list = new ArrayList();
+		list.add(1);
+		list.add(2);
+		list.add(5);
+		list.add(7);
+		printDouble(list);*/
+		// Starting fr Java 1.5
+		/*ArrayList <Integer> list2 = new ArrayList<Integer>();
+		list2.add(1);
+		list2.add(2);
+		list2.add(5);
+		list2.add(7);
+		printDouble(list2);
+		HashMap <String,Integer> hashmap = new HashMap<String,Integer>();*/
+		Integer [] intArray = {10,20,30,40,50,60};
+		Character [] charArray = {'A','C','B','K','G'};
+	}
+	public static void printDouble(ArrayList<Integer> list) {
+		for(int i:list) {
+			System.out.println(i*2);
+		}
+	}
+}

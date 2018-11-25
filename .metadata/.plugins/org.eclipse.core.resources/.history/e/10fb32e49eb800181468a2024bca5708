@@ -1,0 +1,9 @@
+package com.vietjack;
+
+public class Parrot {
+
+	public Parrot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

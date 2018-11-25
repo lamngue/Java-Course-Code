@@ -1,0 +1,37 @@
+package com.vietjack;
+
+public class HelloWorldequalProject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = new String("Hello");
+		String s2 = new String("Hello"); 
+		String s7 = new String("heLlo");
+		if(s1 == s2) { //so sanh vung nho, ko bao h bang nhau khi tao moi bang "new"
+			System.out.println("s1 == s2");
+		}else {
+			System.out.println("s1 != s2");
+		}
+		if(s1.equalsIgnoreCase(s7)) { //so sanh ve gia tri, ko bao h bang nhau khi tao moi bang "new"
+			System.out.println("s1 equals s7");
+		}else {
+			System.out.println("s1 != s2");
+		}
+		String s3 = new String("Hello");
+		String s4 = s3;
+		if(s3 == s4) {
+			System.out.println("s3 == s4");
+		}else {
+			System.out.println("s3 != s4");
+		}
+		//String pool
+		String s5="Hello";
+		String s6 = "Hello";
+		if(s5 == s6) {
+			System.out.println("s5 == s6");
+		}else {
+			System.out.println("s5 != s6");
+		}
+	}
+
+}

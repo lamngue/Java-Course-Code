@@ -1,0 +1,18 @@
+package com.vietjack;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String message = "";
+		try {
+			
+		}catch(ArithmeticException e) {
+			
+		}
+	}
+
+}

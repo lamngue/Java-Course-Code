@@ -1,0 +1,20 @@
+package com.vietjack;
+
+public class HelloWorld {
+	void m() {
+		int a = 1/0;
+		
+	}
+	void n() {
+		m();
+	}
+	void p() {
+		n();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HelloWorld hello = new HelloWorld();
+		hello.p();
+	}
+
+}

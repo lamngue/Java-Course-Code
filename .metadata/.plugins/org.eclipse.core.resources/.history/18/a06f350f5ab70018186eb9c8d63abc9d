@@ -1,0 +1,9 @@
+package com.vietjack.utils;
+
+public class MathUtils {
+
+	public MathUtils() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

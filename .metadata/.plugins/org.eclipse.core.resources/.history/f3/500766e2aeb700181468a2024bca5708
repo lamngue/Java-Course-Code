@@ -1,0 +1,16 @@
+
+public class Student {
+	private String name;
+	private static int numbers;
+	public Student(String name) {
+		this.name = name;
+		System.out.println("Sinh vien moi ten:" + this.name);
+		numbers++;
+		System.out.println("So luong sv trong lop:" + numbers); //ko co this vi la bien static
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

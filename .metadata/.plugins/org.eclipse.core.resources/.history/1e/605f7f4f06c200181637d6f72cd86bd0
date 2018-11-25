@@ -1,0 +1,14 @@
+package com.vietjack;
+
+public class StringReg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String data = "Hom    nay          troi dep qua";
+		String[] str = data.split("\\s+");
+		for(String element:str) {
+			System.out.println(element);
+		}
+	}
+
+}

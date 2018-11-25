@@ -1,0 +1,44 @@
+package edu.gac.mcs178.gack.domain;
+
+import java.util.List;
+import edu.gac.mcs178.gack.*;
+
+
+public class ScrollOfCollectingChocolates extends MagicScroll {
+	private int times;
+	private String title;
+	public ScrollOfCollectingChocolates(String title, int charges) {
+		// TODO Auto-generated constructor stub
+		super(title,charges);
+		this.times = 0;
+	}
+	public String changeName() {
+		title = "CHOCOLATE SCROLL";
+		return title;
+	}
+	
+	public void beRead() {
+		Person owner = getOwner();
+		if (owner == null) {
+			Utility.displayMessage("No one has " + getName());
+		} else {
+			owner.say("I have read " + getName());
+			times ++;
+			if(times == 1) {
+				Utility.displayMessage("Title has been revealed. It is " + changeName());
+			}
+			if(times == super.getCharges()) {
+				Utility.displayMessage("Charged. Invoked");
+				this.doMagic();
+			}
+		}
+	}
+	@Override
+	public void doMagic() {
+		// collect chocolate in ALL THE WORLD
+		List<Place> neighbors = new GackWorld().getWorld();
+		
+		
+	}
+
+}

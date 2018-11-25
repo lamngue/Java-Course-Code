@@ -1,0 +1,20 @@
+package com.vietjack;
+import java.util.*;
+
+import com.vietjack.utils.MathUtils;
+
+public class Main {
+
+	public Main() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//java.lang.*
+		Scanner scanner = new Scanner(System.in);
+		ArrayList <Integer> arrayList=new ArrayList<Integer>();
+		System.out.println("Tong tu 1 den 10" + MathUtils.sum(10));
+	}
+
+}

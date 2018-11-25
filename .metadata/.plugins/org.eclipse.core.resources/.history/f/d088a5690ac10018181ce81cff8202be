@@ -1,0 +1,13 @@
+package com.vietjack;
+
+public class ThreadExample {
+	public int count = 0;
+	public void doWork() {
+		Thread t1 = new Thread(new Runnable());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.vietjack;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//HashMap
+		//LinkedHashMap
+		//TreeMap
+		//HashTable
+		Map <Integer,String> hashMap = new HashMap<Integer,String>();
+	}
+	public static void testMain(Map<Integer,String> testMap) {
+		testMap.put(11, "Ha");
+		testMap.put(5, "An");
+		testMap.put(6, "Hoa");
+		testMap.put(7, "Binh");
+		testMap.put(12, "The");
+		testMap.put(9, "Gioi");
+		testMap.put(22, "My");
+		testMap.put(30, "Viet");
+		testMap.put(45, "Nam");
+		for(Integer integer:testMap.keySet()) {
+			String value = testMap.get(key);
+		}
+	}
+
+}

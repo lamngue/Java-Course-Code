@@ -1,0 +1,21 @@
+package com.vietjack;
+
+import java.util.ArrayList;
+
+public class HelloWorld {
+
+	public HelloWorld() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String[] args) {
+		ArrayList list = new ArrayList();
+		list.add(1);
+		list.add(2);
+		list.add(5);
+	}
+	public static void printDouble(ArrayList list) {
+		for(Object i:list) {
+			System.out.println((Integer)i*2);
+		}
+	}
+}
